@@ -1,0 +1,84 @@
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --light: #eee;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+  --gray: #6b7280;
+}
+
+.SellBuyList-list {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--dark);
+}
+main {
+  flex: 1 0 0%;
+  width: 100%;
+  margin: 0 auto;
+}
+.SellBuyList-list{
+    padding: 1rem;
+}
+.SellBuyList-list h2{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+.SBList{
+    display: flex;
+    justify-content: space-between;
+    background: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.SBList .content .text{
+color: var(--light);
+font-size: 1.125rem;
+width: 100%;
+display: block;
+transition: 0.4s;
+background: var(--darkest);
+
+}
+.SBList .content{
+    flex:1 1 0%;
+}
+.SBList .content .text:not(:read-only){
+    color: var(--pink);
+}
+.SellBuyList-list .SBList .actions{
+    display:  flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: var(--darkest);
+}
+.SBList .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.SBList .actions button:active{
+    opacity: 0.6;
+}
+.SBList .actions button:hover{
+    opacity: 0.6;
+
+}
+.SBList .actions .edit{
+    background-image: linear-gradient(to right,var(--pink),
+    var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.SBList .actions .delete{
+color: crimson;
+
+}

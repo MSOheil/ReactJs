@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Fara sans", sans-serif;
+  color: #fff;
+  background: #374151;
+}
+input,button{
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
